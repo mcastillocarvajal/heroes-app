@@ -9,6 +9,7 @@ export const LoginScreen = ({ history }) => {
     const handleLogin = () => {
 
         const lastPath = localStorage.getItem('lastPath') || '/';
+        const searchPath = localStorage.getItem('searchPath')
 
         dispatch({
             type: types.login,
@@ -17,7 +18,11 @@ export const LoginScreen = ({ history }) => {
             }
         })
 
-        history.replace( lastPath )
+        history.replace( 
+            ( searchPath )
+                ? lastPath + searchPath
+                : lastPath
+         )
     }
 
     return (

@@ -5,6 +5,7 @@ import { Redirect, Route } from 'react-router'
 export const PrivateRoute = ({ isAuth, component: Component, ...rest }) => {
 
     localStorage.setItem('lastPath', rest.location.pathname);
+    localStorage.setItem('searchPath', rest.location.search);
 
     return (
         <Route { ...rest }

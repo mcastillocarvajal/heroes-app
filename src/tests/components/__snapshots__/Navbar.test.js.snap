@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test for <Navbar/> should show component correctly 1`] = `
+<nav
+  className="navbar navbar-expand-sm navbar-dark bg-dark"
+>
+  <div
+    className="container-fluid"
+  >
+    <a
+      className="navbar-brand"
+      onClick={[Function]}
+    >
+      Asociations
+    </a>
+    <div
+      className="navbar-collapse"
+    >
+      <div
+        className="navbar-nav"
+      >
+        <a
+          aria-current={null}
+          className="nav-item nav-link"
+          onClick={[Function]}
+        >
+          Marvel
+        </a>
+        <a
+          aria-current={null}
+          className="nav-item nav-link"
+          onClick={[Function]}
+        >
+          DC
+        </a>
+        <a
+          aria-current={null}
+          className="nav-item nav-link"
+          onClick={[Function]}
+        >
+          Search
+        </a>
+      </div>
+    </div>
+    <div
+      className="d-flex"
+    >
+      <ul
+        className="navbar-nav ml-auto"
+      >
+        <span
+          className="nav-item nav-link text-info"
+        >
+          Moises
+        </span>
+        <button
+          className="nav-item nav-link btn"
+          onClick={[Function]}
+        >
+          Logout
+        </button>
+      </ul>
+    </div>
+  </div>
+</nav>
+`;
